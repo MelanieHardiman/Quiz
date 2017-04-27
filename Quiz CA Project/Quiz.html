@@ -1,0 +1,249 @@
+<!DOCTYPE HTML>
+<html> 
+<head>
+<title>Harry Potter Quiz</title>
+<style> 
+
+body {
+background:url("background.jpg");
+font-family: Verdana; 
+}
+
+#main {
+width: 85%;
+max-width: 950px;
+border: 10px black solid;
+margin: auto;
+padding: 10px;left 20px;
+background-color: yellow;
+}
+
+#header {
+margin: auto;
+display: block;
+border: 2px solid black;
+padding: 5px;
+height: 270px;
+width:90%;
+background:url("hp.png");
+background-repeat: no-repeat;
+background-color: black; 
+}
+
+h1 {
+padding-left: 55px;
+padding-top: 15px;
+font-size: large;
+text-align:left;
+text-shadow: 0 0 2px red;
+} 
+
+p { 
+padding-left: 80px;
+font-weight:bold; 
+font-size:large; 
+} 
+
+.container {
+    position: relative;
+}
+
+.center {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+	}
+
+#timer { 
+	padding-left:35px;
+	font-size: x-large;
+	text-align:center;
+	text-shadow: 0 0 3px red; 
+	padding-bottom: 15px;
+	padding-top: 10px;
+	}
+
+#myform { 
+	width: 280px;
+	border-style: dashed;
+	border-radius: 12px;
+	margin: auto;
+	width: 30%; 
+	font-size: large;
+	font-variant: small-caps;
+	
+	}
+
+#quizsubmit { 
+	position:relative; 
+	
+	left: 50%;
+	height:40px;
+	width: 90px;
+	font-size:medium;
+	text-align:center;
+	} 
+	
+	
+<div class="container">
+<div class="center"></div>
+</div>
+
+</style> 
+</head>
+<body>
+<div id="main"><!-- open main div -->
+<div id="header"><!-- open header div -->
+</div><!-- close header div -->   
+
+<div id="timer">Time left = <span id="timer"></span></div>
+
+<form action="" id="myform" >
+<p>
+<label for='Name'>Name:</label>
+<input type="text" id="Name" name="Name" />
+</p>
+<p>
+<label for='Email'>Email:</label>
+<input type="text" id="Email" name="Email" />
+</p>
+<p>
+<label for='Mobile'>Mobile:</label>
+<input type="text" id="Mobile" name="Mobile" />
+</p>
+<p>
+<input type="submit" name="submit" value="Submit">
+</p>
+</form>
+  
+<h1>1.Which Defence Against the Dark Arts Professor dies before the end of the school year?</h1>
+<p> <input type="radio" name="One" value="0" />Dolores Umbridge<br />
+<input type="radio" name="One" value="0" />Remus Lupin<br />
+<input type="radio" name="One" value="5" />Quirinis Quirrell<br />
+<input type="radio" name="One" value="0" />Gilderoy Lockhart<br /></p>
+
+<h1>2.Who is the first person to destroy a horcrux?</h1>
+<p> <input type="radio" name="Two" value="0" />Neville Longbottom<br />
+<input type="radio" name="Two" value="5" />Harry Potter<br />
+<input type="radio" name="Two" value="0" />Albus Dumbledore<br />
+<input type="radio" name="Two" value="0" />Hermione Granger<br /> </p>
+
+<h1>3.Which of these shops is not found in Diagon Alley?</h1>
+<p> <input type="radio" name="Three" value="0" />Flourish & Blott's<br />
+<input type="radio" name="Three" value="0" />Eeylops Owl Emporium<br />
+<input type="radio" name="Three" value="0" />Madam Malkin's Robes for All Occasions<br />
+<input type="radio" name="Three" value="5" />Honeyduke's<br /> </p>
+
+<h1>4.What magical creature took Sirius Black away from Hogwarts?</h1>
+<p> <input type="radio" name="Four" value="5" />Hippogriff<br />
+<input type="radio" name="Four" value="0" />Dragon<br />
+<input type="radio" name="Four" value="0" />Unicorn<br />
+<input type="radio" name="Four" value="0" />Thestral<br /> </p>
+
+<h1>5.What position did Oliver Wood play on the Gryffindor Quidditch team?</h1>
+<p> <input type="radio" name="Five" value="0" />Chaser<br />
+<input type="radio" name="Five" value="5" />Keeper<br />
+<input type="radio" name="Five" value="0" />Beater<br />
+<input type="radio" name="Five" value="0" />Seeker<br /> </p>
+
+<h1>6.Who does Harry accidently 'blow up'?</h1>
+<p> <input type="radio" name="Six" value="0" />Vernon Dursley<br />
+<input type="radio" name="Six" value="0" />Petunia Dursley<br />
+<input type="radio" name="Six" value="5" />Marge Dursley<br />
+<input type="radio" name="Six" value="0" />Dudley Dursley<br /> </p> 
+
+<h1>7.Who's Patronus took the shape of a hare?</h1>
+<p> <input type="radio" name="Seven" value="0" />Ginny Weasley<br />
+<input type="radio" name="Seven" value="0" />Hermione Granger<br />
+<input type="radio" name="Seven" value="0" />Cho Chang<br />
+<input type="radio" name="Seven" value="5" />Luna Lovegood<br /> </p>
+
+<h1>8.Which of the Deathly Hallows does Harry receive for Christmas?</h1>
+<p> <input type="radio" name="Eight" value="0" />Ressurrection Stone<br />
+<input type="radio" name="Eight" value="5" />Cloak of Invisibility<br />
+<input type="radio" name="Eight" value="0" />Elder Wand<br />
+<input type="radio" name="Eight" value="0" />None of the Above<br /> </p>
+
+<h1>9.Which of these did not protect the Philosopher's Stone?</h1>
+<p> <input type="radio" name="Nine" value="5" />Cornish Pixies<br />
+<input type="radio" name="Nine" value="0" />Mirror of Erised<br />
+<input type="radio" name="Nine" value="0" />Devil's Snare<br />
+<input type="radio" name="Nine" value="0" />Wizard's Chess <br /> </p>
+
+<h1>10.Who destroyed the last Horcrux?</h1>
+<p> <input type="radio" name="Ten" value="0" />Lord Voldemort<br />
+<input type="radio" name="Ten" value="0" />Harry Potter<br />
+<input type="radio" name="Ten" value="5" />Neville Longbottom<br />
+<input type="radio" name="Ten" value="0" />Ron Weasley<br /> </p>
+
+<h1>11.Who dies in the Triwizard Tournament? </h1>
+<p> <input type="radio" name="Eleven" value="0" />Viktor Krum<br />
+<input type="radio" name="Eleven" value="5" />Cedric Diggory<br />
+<input type="radio" name="Eleven" value="0" />Harry Potter<br />
+<input type="radio" name="Eleven" value="0" />Fleur Delacour<br /> </p> 
+
+<h1>12.Which Weasley studied Dragons in Romania?</h1>
+<p> <input type="radio" name="Twelve" value="0" />Bill<br />
+<input type="radio" name="Twelve" value="0" />Percy<br />
+<input type="radio" name="Twelve" value="0" />George<br />
+<input type="radio" name="Twelve" value="5" />Charlie<br /> </p>
+
+<h1>13.Who testifies at Harry's trial at the Ministry of Magic?</h1>
+<p> <input type="radio" name="Thirteen" value="0" />Argus Filch<br />
+<input type="radio" name="Thirteen" value="0" />Marius Black<br />
+<input type="radio" name="Thirteen" value="5" />Arabella Figg<br />
+<input type="radio" name="Thirteen" value="0" />Angus Buchanan<br /> </p>
+
+<h1>14.Where did Sirius Black live?</h1>
+<p> <input type="radio" name="Fourteen" value="5" />Grimmauld Place<br />
+<input type="radio" name="Fourteen" value="0" />Privet Drive<br />
+<input type="radio" name="Fourteen" value="0" />The Burrow<br />
+<input type="radio" name="Fourteen" value="0" />Shell Cottage<br /> </p>
+
+<h1>15.Who is the house ghost for Hufflepuff?</h1>
+<p> <input type="radio" name="Fifteen" value="0" />Nearly Headless Nick<br />
+<input type="radio" name="Fifteen" value="5" />The Fat Friar<br />
+<input type="radio" name="Fifteen" value="0" />The Grey Lady<br />
+<input type="radio" name="Fifteen" value="0" />The Bloody Barron<br /> </p> 
+
+<h1>16.Which is not a magical method of transport?</h1>
+<p> <input type="radio" name="Sixteen" value="0" />Knight Bus<br />
+<input type="radio" name="Sixteen" value="0" />Portkey<br />
+<input type="radio" name="Sixteen" value="0" />Floo Powder<br />
+<input type="radio" name="Sixteen" value="5" />Hogwarts Express<br /> </p> 
+
+<h1>17.Who was not a Death Eater?</h1>
+<p> <input type="radio" name="Seventeen" value="0" />Bartemious Crouch Jr.<br />
+<input type="radio" name="Seventeen" value="5" />Bathilda Bagshot<br />
+<input type="radio" name="Seventeen" value="0" />Lucius Malfoy<br />
+<input type="radio" name="Seventeen" value="0" />Bellatrix Lestrange<br /> </p>
+
+<h1>18.Which of these does Aberforth Dumbledore own and run?</h1>
+<p> <input type="radio" name="Eighteen" value="5" />Hog's Head Inn<br />
+<input type="radio" name="Eighteen" value="0" />Leaky Cauldron<br />
+<input type="radio" name="Eighteen" value="0" />Three Broomsticks<br />
+<input type="radio" name="Eighteen" value="0" />Honeydukes<br /> </p>
+
+<h1>19.Who was not an animagus?</h1>
+<p> <input type="radio" name="Nineteen" value="0" />Peter Pettigrew<br />
+<input type="radio" name="Nineteen" value="0" />James Potter<br />
+<input type="radio" name="Nineteen" value="5" />Remus Lupin<br />
+<input type="radio" name="Nineteen" value="0" />Sirius Black<br /> </p>
+
+<h1>20.Who was not a member of Professor Slughorn's Slug Club?</h1>
+<p> <input type="radio" name="Twenty" value="0" />Harry Potter<br />
+<input type="radio" name="Twenty" value="5" />Ron Weasley<br />
+<input type="radio" name="Twenty" value="0" />Hermione Granger<br />
+<input type="radio" name="Twenty" value="0" />Cormac McLaggen<br /> </p> 
+
+<div> <input type="button" id="quizsubmit" value="Submit!" name="submit" onClick="grade()"></div>
+</form>
+
+<h1>Your grade is: <span id="grade">________</span></h1>
+
+</div><!--close main div -->
+
+<script src="js/quiz.js"></script> 
+</body>
+</html> 
